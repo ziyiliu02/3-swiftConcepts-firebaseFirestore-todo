@@ -79,6 +79,7 @@
 				649139072A86046C00A5FC0D /* __swiftConcepts_firebaseFirestore_todoApp.swift */,
 				64734CCD2A86175E001F5766 /* Views */,
 				64734CCE2A86177E001F5766 /* ViewModels */,
+				64E7DA812A8658C900580490 /* Models */,
 				6491390B2A86046E00A5FC0D /* Assets.xcassets */,
 				6491390D2A86046E00A5FC0D /* __swiftConcepts_firebaseFirestore_todo.entitlements */,
 				64734CCB2A860CC6001F5766 /* GoogleService-Info.plist */,
@@ -93,6 +94,13 @@
 				6491390F2A86046E00A5FC0D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64E7DA812A8658C900580490 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

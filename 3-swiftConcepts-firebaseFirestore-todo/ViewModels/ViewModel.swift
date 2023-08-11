@@ -9,6 +9,6 @@ import Foundation
 
 class ViewModel: ObservableObject {
     
-    @Published var list = ["Apple", "Pear", "Banana"]
+    @Published var list = ["Cat", "Dog"]
     
 }
