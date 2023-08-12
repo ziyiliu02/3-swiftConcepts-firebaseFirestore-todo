@@ -23,6 +23,20 @@ struct ContentView: View {
                 HStack {
                     Text(item.name)
                     Spacer()
+                    
+                    // Update button
+                    Button {
+                        
+                        // Update todo
+                        model.updateData(todoToUpdate: item)
+                    } label: {
+                        Image(systemName: "pencil")
+                            .foregroundColor(.black)
+                    }
+                    .buttonStyle(BorderedButtonStyle())
+
+                    
+                    // Delete button
                     Button {
                         
                         // Delete todo
@@ -31,6 +45,7 @@ struct ContentView: View {
                         Image(systemName: "trash")
                             .foregroundColor(.red)
                     }
+                    .buttonStyle(BorderedButtonStyle())
 
                 }
             

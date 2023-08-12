@@ -13,6 +13,24 @@ class ViewModel: ObservableObject {
 //    @Published var list = ["Cat", "Dog"]
     @Published var list = [Todo]()
     
+    func updateData(todoToUpdate: Todo) {
+        
+        // Get a reference to the database
+        let db = Firestore.firestore()
+        
+        // Set the data to update
+//        db.collection("todos").document(todoToUpdate.id).setData(["name": "updated todo name"], merge: true)
+        db.collection("todos").document(todoToUpdate.id).setData(["name": "Updated:\(todoToUpdate.name)"], merge: true) { error in
+            
+            // Check for errors
+            if error == nil {
+                // Get the new data
+                self.getData()
+            }
+        }
+        
+    }
+    
     func deleteData(todoToDelete: Todo) {
         
         // Get a reference to the database
