@@ -13,11 +13,16 @@ struct ContentView: View {
     
     var body: some View {
         
-        List(model.list, id: \.self) { item in
-            Text(item) 
+        List(model.list) { item in
+            Text(item.name)
         }
-        
+
     }
+    
+    init(){
+        model.getData()
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
